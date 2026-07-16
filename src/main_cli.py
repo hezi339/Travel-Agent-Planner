@@ -16,5 +16,10 @@ if __name__ == "__main__":
     for log in res["trace"]:
         print(log)
 
+    if res.get("sources"):
+        print("\n===== 参考笔记来源 =====")
+        for s in res["sources"]:
+            print(s)
+
     print("\n===== 最终旅行方案 =====")
     print(res["result"])

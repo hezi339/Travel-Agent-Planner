@@ -1,18 +1,50 @@
 # 密钥环境文件（切勿上传到 GitHub）
+
 .env
 
+
+
 # 虚拟环境
+
 venv/
+
 env/
+
 __pycache__/
+
 *.pyc
+
 *.pyo
 
+
+
 # 日志、缓存
+
 *.log
+
 .cache/
 
-# 截图、临时文件
-*.png
-*.jpg
+
+
+# RAG 数据（样本 JSON 可提交，用户截图与向量库不入库）
+
+chroma_db/
+
+data/screenshots/
+
+data/parsed/
+
 tmp/
+
+
+
+# 用户上传的截图（保留 sample_notes）
+
+*.png
+
+*.jpg
+
+*.jpeg
+
+!.gitkeep
+
